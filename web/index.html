@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Food.</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Food<span>.</span></a>
+        <div class="toggle" onclick="toggle();"></div>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h3>Food Brings Happiness</h3>
+            <p>Kamu dapat menikmati hidangan istimewa yang akan disajikan dengan orang-orang tersayang. But it's not just Food, it's an Experience.</p>
+            <a href="#menu" class="btn">Our Menus</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="title">About Us</h2>
+                <p>
+                    Kami percaya kunci bisnis kami adalah para pelanggan dan kepercayaan mereka terhadap layanan yang kami berikan. Itu sebabnya kami 
+                    tidak pernah berkompromi pada kualitas produk. Kami akan selalu memberikan pelayanan yang terbaik kepada seluruh pelanggan. Dan kami 
+                    mempunyai tim untuk mengecek kualitas setiap saat. Semua makanan dan minuman yang tersajikan di restaurant kami memiliki standar dan kualitas 
+                    terjamin. Bahan-bahan yang kami gunakan bersumber dari tempat yang terpecaya. Dan, kami memakai jasa juru masak yang sudah diakui kualitasnya 
+                    dan memiliki pengalaman di bidangnya masing-masing.
+                </p>
+            </div>
+            <div class="col50">
+                <div class="image">
+                    <img src="assets/img/bg/bg2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Our Menus</h2>
+        </div>
+
+        <article class="atas">
+            <div class="slides-atas">
+                <div class="appetizer">
+                    <h3>Appetizer</h3>
+                    <div class="slide1 slide1--visible">
+                        <img src="assets/img/appetizer/greek-salad-plate-with-tomato-olives-bread-herbs-spices.jpg" alt="">
+                        <p>Greek Salad with Tomato Olives Bread Spices</p>
+                    </div>          
+                    <div class="slide1">
+                        <img src="assets/img/appetizer/keto-salad-with-roasted-eggplant.jpg" alt="">
+                        <p>Keto Salad with Roasted Eggplant</p>
+                    </div>
+                    <div class="slide1">
+                        <img src="assets/img/appetizer/pumpkin-soup-with-milk-foam-buns-crackers-arugula.jpg" alt="">
+                        <p>Pumpkin Soup with Milk Foam Buns Crackers Arugula</p>
+                    </div>
+                    <div class="slide1">
+                        <img src="assets/img/appetizer/winter-mushroom-soup-with-croutons.jpg" alt="">
+                        <p>Winter Mushroom with Croutons</p>
+                    </div>
+        
+                    <div class="navigation1">
+                        <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+                        <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slides-atas">
+                <div class="main-course">
+                    <h3>Main Course</h3>
+                    <div class="slide2 slide2--visible">
+                        <img src="assets/img/main/cooked_meat_kebab_with_vege.jpg" alt="">
+                        <p>Cooked Meat Kebab with Vegetables</p>
+                    </div>          
+                    <div class="slide2">
+                        <img src="assets/img/main/fettuccine-with-meatballs-sauce.jpg" alt="">
+                        <p>Fettuccine with Meatballs and Sauce</p>
+                    </div>
+                    <div class="slide2">
+                        <img src="assets/img/main/fried-chicken-with-tomatoes-salad.jpg" alt="">
+                        <p>Frien Chicken with Tomatoes Salad</p>
+                    </div>
+                    <div class="slide2">
+                        <img src="assets/img/main/grilled-ribs-lula-kebab-with-baked-tomato-pepper.jpg" alt="">
+                        <p>Grilled Ribs Kebab with Baked Tomato Pepper</p>
+                    </div>
+                    <div class="slide2">
+                        <img src="assets/img/main/salmon-rice-poke.jpg" alt="">
+                        <p>Salmon Rice Poke</p>
+                    </div>
+                    <div class="slide2">
+                        <img src="assets/img/main/spaghetti-with-marinara-tomato-sauce.jpg" alt="">
+                        <p>Spaghetti with Marinara Tomato Sauce</p>
+                    </div>
+                    <div class="slide2">
+                        <img src="assets/img/main/steak-with-beer-sauce.jpg" alt="">
+                        <p>Steak with Barbecue Sauce and Salad</p>
+                    </div>
+                    <div class="slide2">
+                        <img src="assets/img/main/tasty-noodles.jpg" alt="">
+                        <p>Tasty Asian Noodles with Lime</p>
+                    </div>
+        
+                    <div class="navigation2">
+                        <a class = "prev" onclick = "plusSlides2(-1)">&#10094;</a>
+                        <a class = "next" onclick = "plusSlides2(-1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="bawah">
+            <div class="slides-bawah">
+                <div class="dessert">
+                    <h3>Dessert</h3>         
+                    <div class="slide3 slide3--visible">
+                        <img src="assets/img/dessert/choco-sauce.jpg" alt="">
+                        <p>Delicious White Cake with Chocolate Sauce</p>
+                    </div>
+                    <div class="slide3">
+                        <img src="assets/img/dessert/cupcake-with-choco-cream-and-raspberry.jpg" alt="">
+                        <p>Cupcake with Choco Cream and Raspberry</p>
+                    </div>
+                    <div class="slide3">
+                        <img src="assets/img/dessert/delicious_winter_crepe_with_bananas.jpg" alt="">
+                        <p>Delicious Winter Crepe with Bananas</p>
+                    </div>
+                    <div class="slide3">
+                        <img src="assets/img/dessert/donuts-with-mix-fruits.jpg" alt="">
+                        <p>Donuts with Mix Fruits</p>
+                    </div>
+                    <div class="slide3">
+                        <img src="assets/img/dessert/fluffy-strawberry-swiss-roll-food.jpg" alt="">
+                        <p>Fluffy Strawberry Swiss Roll</p>
+                    </div>
+                    <div class="slide3">
+                        <img src="assets/img/dessert/haute-cuisine-dome-desert-with-passion-fruit-sauce.jpg" alt="">
+                        <p>Haute Cuisine Dome with Passion Fruit Sauce</p>
+                    </div>
+                    <div class="slide3">
+                        <img src="assets/img/dessert/mix-macaroons.jpg" alt="">
+                        <p>Mix Macaroons Sweety</p>
+                    </div>
+                    <div class="slide3">
+                        <img src="assets/img/dessert/waffles_with_strawberry.jpg" alt="">
+                        <p>Waffles with Strawberry</p>
+                    </div>
+        
+                    <div class="navigation3">
+                        <a class = "prev" onclick = "plusSlides3(-1)">&#10094;</a>
+                        <a class = "next" onclick = "plusSlides3(-1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slides-bawah">
+                <div class="drinks">
+                    <h3>Drinks</h3>
+                    <div class="slide4 slide4--visible">
+                        <img src="assets/img/drinks/delicious_banana_milkshake.jpg" alt="">
+                        <p>Delicious Banana Milkshake</p>
+                    </div>          
+                    <div class="slide4 slide4--visible">
+                        <img src="assets/img/drinks/iced_tea.jpg" alt="">
+                        <p>Iced Tea</p>
+                    </div>
+                    <div class="slide4 slide4--visible">
+                        <img src="assets/img/drinks/latte_cappucino.jpg" alt="">
+                        <p>Latte Cappucino</p>
+                    </div>
+                    <div class="slide4 slide4--visible">
+                        <img src="assets/img/drinks/lemonade.jpg" alt="">
+                        <p>Infuse Water with Fresh Lemonade</p>
+                    </div>
+                    <div class="slide4 slide4--visible">
+                        <img src="assets/img/drinks/milkshake-with-mint-chocolate.jpg" alt="">
+                        <p>Milkshake with Mint Chocolate</p>
+                    </div>
+                    <div class="slide4 slide4--visible">
+                        <img src="assets/img/drinks/strawberry-smoothie-with-straw.jpg" alt="">
+                        <p>Strawberry Smoothie</p>
+                    </div>
+                    <div class="slide4 slide4--visible">
+                        <img src="assets/img/drinks/tasty-orange-juice-with-ice-cubes.jpg" alt="">
+                        <p>Orange Juice with Ice Cubes</p>
+                    </div>
+        
+                    <div class="navigation4">
+                        <a class = "prev" onclick = "plusSlides4(-1)">&#10094;</a>
+                        <a class = "next" onclick = "plusSlides4(-1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="review" id="review">
+        <div class="title">
+            <h3 class="titleText">What Our Customers <br>Say About Us</h3>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="assets/img/review/4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"The fried chicken skin is fried to perfection and is crunchy to chew. It tastes good when served with tomatoes salad."</p>
+                    <h3>Jhon still in The House</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="assets/img/review/2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"One of my favourite food is grilled ribs kebab with baked tomato pepper. I can assure oyu this food is authentic!!!
+                        wonderful service and atmosphere. I really like there food taste so i regular taste them."
+                    </p>
+                    <h3>Uncle Ben</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="assets/img/review/3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"Sangat rekomen!!! makanan dan minumannya enak-enak dan membuat lidah serasa tidak mau berhenti untuk mengunyah. Tidak akan  
+                        menyesal untuk datang ke sini, meskipun harganya lumayan tetapi terbayarkan oleh cita rasa yang dihadirkan."
+                    </p>
+                    <h3>Lord Fakhri Skroeepp</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h3 class="titleText">Contact Us</h3>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" name="Name" placeholder="Name...">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="Phone" placeholder="Phone...">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="Email Address" placeholder="Email Adress...">
+            </div>
+            <div class="inputBox">
+                <textarea name="Address" placeholder="Adress..."></textarea>
+            </div>
+            <div class="inputBox send">
+                <input type="submit" value="Send" >
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <div class="bio">
+            <div class="title">
+                <h2 class="titleText">Biodata Siswa</h2> 
+            </div>
+            
+            <div class="bio_data">
+                <img src="assets/img/review/1.jpg" class="bio_img">
+                <h3 class="bio_name">RAMA ALFIN BAEHAQI</h3>
+                <h5 class="bio_profesi">MAHASISWA</h5>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright 2021 <span>Alfin Foundation.</span></p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

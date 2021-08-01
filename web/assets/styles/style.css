@@ -1,0 +1,1025 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 100px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background-color: #f9f9f9;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+}
+header.sticky .logo{
+    color: #111;
+}
+header .logo{
+    color: #f9f9f9;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 50px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: 500;
+}
+header .navigation li a:hover{
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #ff0157;
+}
+header.sticky .navigation li a{
+    color: #111;
+    font-weight: 500;
+}
+header.sticky .navigation li a:hover{
+    color: #ff0157;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/bg/bg6.jpg');
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.banner .content h3{
+    font-size: 4em;
+    color: #f9f9f9;
+}
+.banner .content p{
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #f9f9f9;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+
+
+.about .row{
+    top: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 50%;
+}
+.row .col50 .title{
+    color: #111;
+    font-size: 3em;
+    font-weight: 600;
+}
+.row .col50 p{
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 400;
+    padding-top: 15px;
+    line-height: 3vh;
+    width: 90%;
+}
+.row .col50 .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .col50 .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.menu .title{
+    text-align: center;
+}
+.menu .title .titleText{
+    color: #111;
+    font-size: 3em;
+    font-weight: 600;
+}
+.menu .title p span{
+    font-weight: bold;
+}
+
+.atas{
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.slides-atas{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.slides-atas .appetizer h3{
+    color: #111;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.slides-atas .appetizer .slide1{
+    display: none;
+}
+.slides-atas .appetizer .slide1 img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slides-atas .appetizer .slide1 p{
+    font-size: 20px;
+    font-weight: normal;
+}
+.slides-atas .appetizer .navigation1{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slides-atas .appetizer .navigation1 .prev, 
+.slides-atas .appetizer .navigation1 .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+}
+.slides-atas .appetizer .navigation1 .prev:hover, 
+.slides-atas .appetizer .navigation1 .next:hover{
+    background: rgba(0,0,0,1);
+}
+
+
+.slides-atas .main-course h3{
+    color: #111;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.slides-atas .main-course .slide2{
+    display: none;
+}
+.slides-atas .main-course .slide2 img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slides-atas .main-course .slide2 p{
+    font-size: 20px;
+    font-weight: normal;
+}
+.slides-atas .main-course .navigation2{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slides-atas .main-course .navigation2 .prev, 
+.slides-atas .main-course .navigation2 .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+}
+.slides-atas .main-course .navigation2 .prev:hover, 
+.slides-atas .main-course .navigation2 .next:hover{
+    background: rgba(0,0,0,1);
+}
+
+
+.bawah{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.slides-bawah{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.slides-bawah .dessert h3{
+    color: #111;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.slides-bawah .dessert .slide3{
+    display: none;
+}
+.slides-bawah .dessert .slide3 img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slides-bawah .dessert .slide3 p{
+    font-size: 20px;
+    font-weight: normal;
+}
+.slides-bawah .dessert .navigation3{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slides-bawah .dessert .navigation3 .prev, 
+.slides-bawah .dessert .navigation3 .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+}
+.slides-bawah .dessert .navigation3 .prev:hover, 
+.slides-bawah .dessert .navigation3 .next:hover{
+    background: rgba(0,0,0,1);
+}
+
+
+.slides-bawah .drinks h3{
+    color: #111;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.slides-bawah .drinks .slide4{
+    display: none;
+}
+.slides-bawah .drinks .slide4 img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slides-bawah .drinks .slide4 p{
+    font-size: 20px;
+    font-weight: normal;
+}
+.slides-bawah .drinks .navigation4{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slides-bawah .drinks .navigation4 .prev, 
+.slides-bawah .drinks .navigation4 .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+}
+.slides-bawah .drinks .navigation4 .prev:hover, 
+.slides-bawah .drinks .navigation4 .next:hover{
+    background: rgba(0,0,0,1);
+}
+
+
+
+.review .title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.review .title .titleText{
+    color: #111;
+    font-size: 3em;
+    font-weight: 600;
+}
+.review .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.review .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 45px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.review .content .box .imgBox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.review .content .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.review .content .box .text{
+    text-align: center;
+}
+.review .content .box .text p{
+    font-style: initial;
+}
+.review .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+
+.contact .title .titleText{
+    color: #111;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+.contact .contactForm{
+    margin: auto;
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    text-align: center;
+}
+.contact .contactForm h3{
+    color: #111;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.contact .contactForm .send input{
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+.contact .contactForm .send input:hover{
+    letter-spacing: 6px;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    resize: none;
+}
+
+
+.bio{
+    margin-bottom: 50px;
+}
+.bio .title .titleText{
+    color: #111;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+.bio_data{
+    margin: auto;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 350px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.bio_img{
+    background-color: #fff;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    justify-self: center;
+    object-fit: cover;
+}
+.bio_data .bio_name{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.bio_data .bio_profesi{
+    font-weight: normal;
+}
+
+
+
+.copyright{
+    padding: 10px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyright p{
+    color: #333;
+}
+.copyright p span{
+    color: #ff0157;
+}
+
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        font-size: 1.6em;
+        color: #111;
+    }
+    .toggle{
+        filter: invert(1);
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background: url("../img/menu.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .toggle.active{
+        background: url("../img/cancel.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .toggle{
+        filter: none;
+    }
+
+    
+    .banner .content{
+        max-width: 800px;
+    }
+    .banner .content h3 {
+        font-size: 2.7em;
+    }
+    .banner .content p{
+        font-size: 1.2em;
+    }
+    .btn {
+        font-size: 0.9em;
+    }
+    section{
+        padding: 80px;
+    }
+    .banner .content h3{
+        font-size: 3em;
+        color: #fff;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .title{
+        font-size: 2.3em;
+    }
+    .row .col50 .image{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .row .col50 p {
+        width: 100%;
+    }
+
+    .menu .title .titleText{
+        font-size: 2.3em;
+    }
+    .menu .atas,
+    .menu .bawah{
+        margin-top: 20px;
+    }
+    .atas .slides-atas .appetizer h3,
+    .atas .slides-atas .main-course h3,
+    .bawah .slides-bawah .dessert h3,
+    .bawah .slides-bawah .drinks h3{
+        font-size: 1.6em;
+    }
+    .slides-atas .appetizer .navigation1,
+    .slides-atas .main-course .navigation2,
+    .slides-bawah .dessert .navigation3,
+    .slides-bawah .drinks .navigation4{
+        font-size: 10px;
+    }
+    .slides-atas .appetizer .slide1 p,
+    .slides-atas .main-course .slide2 p,
+    .slides-bawah .dessert .slide3 p,
+    .slides-bawah .drinks .slide4 p {
+        font-size: 18px;
+    }
+
+
+    .review .title .titleText{
+        font-size: 2.3em;
+    }
+    .review .content .box {
+        width: 300px;
+        margin: 15px;
+        padding: 35px;
+    }
+    .review .content .box .text{
+        font-size: 14px;
+    }
+
+
+    .contact .title .titleText{
+        font-size: 2.3em;
+    }
+    .contact .contactForm{
+        padding: 40px 50px;
+        max-width: 450px;
+        margin-top: 25px;
+    }
+    .contact .contactForm h3{
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+    .contactForm .inputBox{
+        margin-bottom: 15px;
+    }
+    .contactForm .inputBox input, .contactForm .inputBox textarea {
+        font-size: 13px;
+    }
+    .contact .contactForm .send input{
+        font-size: 1.3em;
+    }
+
+
+    .bio {
+        margin: 35px;
+    }
+    .bio .title .titleText{
+        font-size: 2.3em;
+    }
+    .bio_data {
+        padding: 40px;
+        max-width: 330px;
+        margin-top: 35px;
+    }
+    .bio_img{
+        width: 160px;
+        height: 160px;  
+        margin-bottom: 20px;
+    }
+    .bio_data .bio_name {
+        font-size: 15px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    .bio_data .bio_profesi {
+        font-size: 13px;
+    }
+
+
+    .copyright {
+        padding: 5px 40px;
+    }
+    .copyright p {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 767px){
+    section {
+        padding: 60px;
+    }
+    header, header.sticky{
+        padding: 5px 15px;
+    }
+    header .navigation.active {
+        height: calc(100% - 50px);
+        top: 50px;
+    }
+    header .navigation li a {
+        font-size: 1.2em;
+    }
+    header .logo{
+        font-size: 1.7em;
+    }
+    .toggle {
+        height: 22px;
+        width: 25px;
+    }
+    .toggle.active {
+        background-size: 21px;
+    }
+    .banner{
+        min-height: 85vh;
+    }
+    .banner .content {
+        max-width: 650px;
+    }
+    .banner .content h3{
+        font-size: 2.4em;
+    }
+    .banner .content p{
+        font-size: 1em;
+    }
+    .btn{
+        font-size: 0.7em;
+    }
+
+
+    .row .col50 .title {
+        font-size: 2em;
+    }
+    .row .col50 p {
+        font-size: 14px;
+        padding-top: 10px;
+        line-height: 2.8vh;
+    }
+    .row .col50 .image {
+        height: 270px;
+        margin-top: 15px;
+    }
+    .menu .atas, 
+    .menu .bawah {
+        margin-top: 15px;
+    }
+    .menu .title .titleText {
+        font-size: 2em;
+    }
+
+    .atas .slides-atas .appetizer h3, 
+    .atas .slides-atas .main-course h3, 
+    .bawah .slides-bawah .dessert h3, 
+    .bawah .slides-bawah .drinks h3 {
+        font-size: 1.4em;
+    }
+    .slides-atas .appetizer .slide1 p, 
+    .slides-atas .main-course .slide2 p, 
+    .slides-bawah .dessert .slide3 p, 
+    .slides-bawah .drinks .slide4 p {
+        font-size: 15px;
+    }
+
+
+    .review .title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .review .title .titleText {
+        font-size: 2em;
+    }
+    .review .content .box {
+        width: 285px;
+        margin: 13px;
+        padding: 30px;
+    }
+    .review .content .box .imgBox {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .review .content .box .text {
+        font-size: 13px;
+    }
+
+
+    .contact .title .titleText {
+        font-size: 2em;
+    }
+    .contact .contactForm {
+        padding: 25px 50px;
+        max-width: 430px;
+        margin-top: 20px;
+    }
+    .contact .contactForm h3 {
+        font-size: 1.2em;
+        margin-bottom: 12px;
+    }
+    .contactForm .inputBox {
+        margin-bottom: 12px;
+    }
+    .contact .contactForm .send input {
+        font-size: 1.1em;
+    }
+
+
+    
+    .bio {
+        margin: 25px;
+    }
+    .bio .title .titleText {
+        font-size: 2em;
+    }
+    .bio_data {
+        padding: 35px;
+        max-width: 300px;
+        margin-top: 25px;
+    }
+    .bio_img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 15px;
+    }
+    .bio_data .bio_name {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    .bio_data .bio_profesi {
+        font-size: 12px;
+    }
+
+
+    .copyright {
+        padding: 3px 40px;
+    }
+    .copyright p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 479px){
+    section {
+        padding: 50px;
+    }
+    header, header.sticky {
+        padding: 3px 12px;
+    }
+    header .navigation.active {
+        height: calc(100% - 43px);
+        top: 43px;
+    }
+    header .navigation li a {
+        font-size: 1em;
+        color: #111;
+    }
+    header .logo {
+        font-size: 1.3em;
+    }
+    .toggle {
+        height: 20px;
+        width: 23px;
+    }
+    .toggle.active {
+        background-size: 18px;
+    }
+
+
+    .banner {
+        min-height: 55vh;
+    }
+    .banner .content {
+        max-width: 410px;
+    }
+    .banner .content h3 {
+        font-size: 1.8em;
+    }
+    .banner .content p {
+        font-size: 0.8em;
+    }
+    .btn {
+        font-size: 0.6em;
+        padding: 7px 20px;
+        margin-top: 15px;
+    }
+
+
+    .row .col50 .title {
+        font-size: 1.7em;
+    }
+    .row .col50 p {
+        font-size: 11px;
+        padding-top: 2px;
+        line-height: 2.6vh;
+    }
+    .row .col50 .image {
+        height: 200px;
+        margin-top: 12px;
+    }
+
+
+    .menu .atas, 
+    .menu .bawah {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu .title .titleText {
+        font-size: 1.7em;
+    }
+    .atas .slides-atas,
+    .bawah .slides-bawah{
+        margin: 10px;
+    }
+    .atas .slides-atas .appetizer h3, 
+    .atas .slides-atas .main-course h3, 
+    .bawah .slides-bawah .dessert h3, 
+    .bawah .slides-bawah .drinks h3 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    .slides-atas .appetizer .slide1 p, 
+    .slides-atas .main-course .slide2 p, 
+    .slides-bawah .dessert .slide3 p, 
+    .slides-bawah .drinks .slide4 p {
+        font-size: 14px;
+    }
+    .slides-atas .appetizer .navigation1 .prev, 
+    .slides-atas .appetizer .navigation1 .next,
+    .slides-atas .main-course .navigation2 .prev, 
+    .slides-atas .main-course .navigation2 .next,
+    .slides-bawah .dessert .navigation3 .prev, 
+    .slides-bawah .dessert .navigation3 .next,
+    .slides-bawah .drinks .navigation4 .prev, 
+    .slides-bawah .drinks .navigation4 .next {
+        padding: 12px;
+    }
+
+
+    .review .title .titleText {
+        font-size: 1.7em;
+    }
+    .review .content .box {
+        width: 240px;
+        margin: 10px;
+        padding: 25px;
+    }
+    .review .content .box .imgBox {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    .review .content .box .text {
+        font-size: 12px;
+    }
+
+
+
+    .contact .contactForm {
+        padding: 20px 50px;
+        max-width: 400px;
+        margin-top: 15px;
+    }
+    .contact .title .titleText {
+        font-size: 1.7em;
+    }
+    .contact .contactForm h3 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    .contactForm .inputBox {
+        margin-bottom: 7px;
+    }
+    .contact .contactForm .send input {
+        font-size: 1em;
+    }
+
+
+    .bio .title .titleText {
+        font-size: 1.7em;
+    }
+    .bio_img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 13px;
+    }
+    .bio_data .bio_name {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .bio_data .bio_profesi {
+        font-size: 11px;
+    }
+    .bio_data {
+        padding: 30px;
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+
+    .copyright {
+        padding: 2px 40px;
+    }
+    .copyright p {
+        font-size: 10px;
+    }
+};
